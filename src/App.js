@@ -1,11 +1,9 @@
-import Coinflip from './Coinflip';
-import Walalang from './Walalang';
+import Emojiflip from './Emojiflip';
 
 function App() {
     return (
         <div className="App">
-            <Coinflip />
-            {/* <Walalang /> */}
+            <Emojiflip />
         </div>
     );
 }

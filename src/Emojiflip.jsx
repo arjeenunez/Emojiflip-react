@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Coin from "./Coin"
-import "./Coinflip.css";
+import Coin from "./Emoji"
+import "./Emojiflip.css";
 
-class Coinflip extends Component {
+class Emojiflip extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -27,13 +27,13 @@ class Coinflip extends Component {
     render() {
         const { toss, score } = this.state;
         return (
-            <div class="Coinflip">
-                <h1>Coin flipper!</h1>
-                <div className="Coinflip-coin-container">
+            <div class="Emojiflip">
+                <h1>Emoji flipper!</h1>
+                <div className="Emojiflip-coin-container">
                     <Coin toss={ toss } />
                 </div>
                 <div>
-                    <button onClick={this.handleClick}>Emoji coin!</button>
+                    <button onClick={this.handleClick}>Emoji flip!</button>
                 </div>
                 <div>
                     <p>You have flipped the emoji <strong>{score.reduce((total, el) => total + el)}</strong> times, there have been <strong>{score[0]}</strong> smiles and <strong>{score[1]}</strong> cries
@@ -44,4 +44,4 @@ class Coinflip extends Component {
     }
 }
 
-export default Coinflip;
+export default Emojiflip;
